@@ -19,7 +19,7 @@ var computerSelection = undefined;
 
 function game(){
     for(var i = 0; i<nGame ; i++){
-        var playerSelection = prompt("Make a choice : ");
+        playerSelection = prompt("Make a choice : ");
         computerSelection = getComputerChoice();
         console.log(playRound(playerSelection,computerSelection));
     }
