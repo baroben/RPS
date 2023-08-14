@@ -19,7 +19,9 @@ var computerSelection = undefined;
 
 function game(){
     for(var i = 0; i<nGame ; i++){
-        playerSelection = prompt("Make a choice : ");
+        do{
+            playerSelection = prompt("Make a choice : ").toLowerCase();
+        }while(choices.indexOf(playerSelection) < 0);
         computerSelection = getComputerChoice();
         console.log(playRound(playerSelection,computerSelection));
     }
