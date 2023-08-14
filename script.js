@@ -10,6 +10,17 @@ function getComputerChoice(){
     return choices[Math.floor(choices.length*Math.random())]
 }
 
-const playerSelection = "rock";
-computerSelection = getComputerChoice();
-console.log(playRound(playerSelection,computerSelection));
+const nGame = 5;
+var playerSelection = "rock";
+function game(){
+    for(var i = 0; i<nGame ; i++){
+        computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection,computerSelection));
+    }
+}
+
+game();
+
+
+
+
