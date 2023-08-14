@@ -1,6 +1,8 @@
 function playRound(playerSelection,computerSelection){
     if(playerSelection=="rock" && computerSelection=="scisor" || playerSelection=="paper" && computerSelection=="rock" || playerSelection=="scisor" && computerSelection=="paper")
         return `You WIN! ${playerSelection} beats ${computerSelection}`;
+    else if(playerSelection == computerSelection)
+        return `This is a draw! ${playerSelection} vs ${computerSelection}`
     else
         return `You LOSE! ${computerSelection} beats ${playerSelection}`;
 }
